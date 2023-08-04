@@ -5,29 +5,63 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
 <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.7.0.js"></script>
 <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-<script type="text/javascript">
+<script type="text/javascript" class="init">
+
 const table = new DataTable('#example', {
-    columnDefs: [
-        {
-            searchable: false,
-            orderable: false,
-            targets: 0
-        }
-    ],
-    order: [[1, 'asc']]
+dt_demo.init({
+		jquery: function () {
+				
+var table = $('#example').DataTable({
+	columnDefs: [
+		{
+			searchable: false,
+			orderable: false,
+			targets: 0
+		}
+	],
+	order: [[1, 'asc']]
 });
- 
+
 table
-    .on('order.dt search.dt', function () {
-        let i = 1;
- 
-        table
-            .cells(null, 0, { search: 'applied', order: 'applied' })
-            .every(function (cell) {
-                this.data(i++);
-            });
-    })
-    .draw();
+	.on('order.dt search.dt', function () {
+		var i = 1;
+
+		table
+			.cells(null, 0, { search: 'applied', order: 'applied' })
+			.every(function (cell) {
+				this.data(i++);
+			});
+	})
+	.draw();
+
+		},
+		vanilla: function () {
+				
+const table = new DataTable('#example', {
+	columnDefs: [
+		{
+			searchable: false,
+			orderable: false,
+			targets: 0
+		}
+	],
+	order: [[1, 'asc']]
+});
+
+table
+	.on('order.dt search.dt', function () {
+		let i = 1;
+
+		table
+			.cells(null, 0, { search: 'applied', order: 'applied' })
+			.every(function (cell) {
+				this.data(i++);
+			});
+	})
+	.draw();
+
+		}
+	});
 </script>
 
 <style>
