@@ -1,3 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+    	<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+    	<meta name="apple-mobile-web-app-title" content="CodePen">
+    	<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+    	<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111" />
+    	<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+  	<title>Tofuu Exams</title>
+   	<link rel="canonical" href="https://codepen.io/RedJokingInn/pen/jMZeQN">
+  	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+	<link rel='stylesheet' href='https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css'>
+	<link rel='stylesheet' href='https://cdn.datatables.net/buttons/1.2.2/css/buttons.bootstrap.min.css'>
+  
+	<style>
+		body {
+  		margin: 2em;
+			}
+	</style>
+
+  	<script>
+  		window.console = window.console || function(t) {};
+	</script>
+</head>
+
+<body translate="no">
+  <div>This renderer is now available through the official dataTables CDN. For more information see the DataTables site. <a href="https://datatables.net/plug-ins/dataRender/percentageBars">percentageBars.js</a></div>
+<br/>
+<a class="btn btn-success" style="float:left;margin-right:20px;" href="https://codepen.io/collection/XKgNLN/" target="_blank">Other examples on Codepen</a>
+<table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+	<thead>
+		<tr>
+			<th>No</th>
+			<th>TF No</th>
+			<th>Exam Real</th>
+			<th>Exam Practise</th>
+			<th>Progress</th>
+			<th>Amount</th>
+		</tr>
+	</thead>
+	<tbody>
+
+
+
+
+
+
 <tr><td>225</td><td>TF001</td><td><a href='https://t.weixue100.com/toefl/read/63489.html' target='_blank'>Grinding Grain</a></li></td><td><a href='https://t.weixue100.com/toefl/read/preview?id=63489' target='_blank'>Grinding Grain</td><td>88</td><td data-order='1000'>€1.000,00</td></tr>
 <tr><td>2</td><td>TF384</td><td><a href='' target='_blank'>A Warm-Blooded Turtle</a></li></td><td><a href='' target='_blank'>A Warm-Blooded Turtle</td><td>88</td><td data-order='1000'>€1.000,00</td></tr>
 <tr><td>3</td><td>TF293</td><td><a href='https://shimo.im/docs/dPkpdpNP1Df2Z4kO' target='_blank'>Accounting for the High Density of Planet Mercury</a></li></td><td><a href='' target='_blank'>Accounting for the High Density of Planet Mercury</td><td>88</td><td data-order='1000'>€1.000,00</td></tr>
@@ -711,3 +760,56 @@
 <tr><td>1076</td><td>n/a</td><td><a href='https://t.weixue100.com/toefl/read/62460.html' target='_blank'>Underground Water</a></li></td><td><a href='https://t.weixue100.com/toefl/read/preview?id=62460' target='_blank'>Underground Water</td><td>88</td><td data-order='1000'>€1.000,00</td></tr>
 <tr><td>1077</td><td>n/a</td><td><a href='https://t.weixue100.com/toefl/read/25691.html' target='_blank'>Stream deposits</a></li></td><td><a href='https://t.weixue100.com/toefl/read/preview?id=25691' target='_blank'>Stream deposits</td><td>88</td><td data-order='1000'>€1.000,00</td></tr>
 <tr><td>1078</td><td>n/a</td><td><a href='https://t.weixue100.com/toefl/read/1712.html' target='_blank'>Europe’s Early Sea Trade with Asia</a></li></td><td><a href='https://t.weixue100.com/toefl/read/preview?id=1712' target='_blank'>Europe’s Early Sea Trade with Asia</td><td>88</td><td data-order='1000'>€1.000,00</td></tr>
+
+
+  	</tbody>
+</table>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js'></script>
+<script src='https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js'></script>
+<script src='https://cdn.datatables.net/buttons/1.2.2/js/buttons.colVis.min.js'></script>
+<script src='https://cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js'></script>
+<script src='https://cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js'></script>
+<script src='https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js'></script>
+<script src='https://cdn.datatables.net/buttons/1.2.2/js/buttons.bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js'></script>
+<script src='https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js'></script>
+<script src='https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js'></script>
+<script src='https://cdn.datatables.net/plug-ins/1.10.15/dataRender/percentageBars.js'></script>
+      <script id="rendered-js" >
+/* Parameters for percentageBars renderer:
+1.string: square as default or round for a rounded bar.
+2.string: A hex color for the text.
+3.string: A hex color for the bar.
+5.string: A hex color for the background.
+6.integer: A number used to round the value.
+7.string: A border style, default=ridge (solid, outset, groove, ridge)
+*/
+
+$(document).ready(function () {
+  // DataTable initialisation
+  $('#example').DataTable({
+    "dom": '<"dt-buttons"Bf><"clear">lirtp',
+    "paging": true,
+    "autoWidth": true,
+    "columnDefs": [{
+      targets: 4,
+      render: $.fn.dataTable.render.percentBar('round', '#fff', '#FF9CAB', '#FF0033', '#FF9CAB', 0, 'solid') }],
+
+    "buttons": [
+    'colvis',
+    'copyHtml5',
+    'csvHtml5',
+    'excelHtml5',
+    'pdfHtml5',
+    'print'] });
+
+
+});
+//# sourceURL=pen.js
+    </script>
+
+  
+</body>
+
+</html>
